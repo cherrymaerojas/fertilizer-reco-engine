@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Fertilizer Smart Calc</string>
+    <string name="home">Home</string>
+    <string name="saved_files">Saved Files</string>
+    <string name="edit_options">Edit Options</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="enter_crop">Enter Fieldname</string>
+    <string name="query">Select</string>
+
+    <string name="enter_fieldsize">Enter Fieldsize</string>
+    <string name="fieldname">Fieldname:</string>
+    <string name="calculate">Calculate</string>
+    <string name="field_size">Field Size:</string>
+    <string name="acre">acre</string>
+    <string name="hectare">hectare</string>
+
+    <string name="soil_health_information">Soil Health Information</string>
+    <string name="major_nutrients">Major Nutrients</string>
+    <string name="nitrogen">Nitrogen (%)</string>
+    <string name="phosphorous">Phosphorous (mg kg-1)</string>
+    <string name="potassium">Potassium (mg kg-1)</string>
+
+    <string name="secondary_nutrients">Secondary Nutrients</string>
+    <string name="sulfur">Sulfur (mg kg-1)</string>
+
+    <string name="micro_nutrients">Micro Nutrients</string>
+    <string name="zinc">Zinc (mg kg-1)</string>
+    <string name="boron">Boron (mg kg-1)</string>
+    <string name="iron">Iron (mg kg-1)</string>
+    <string name="copper">Copper (mg kg-1)</string>
+    <string name="manganese">Manganese (mg kg-1)</string>
+
+    <string name="remarks">Remarks</string>
+    <string name="select_crop">Select Crop:</string>
+
+    <string name="suff">Sufficient</string>
+    <string name="deff">Defficient</string>
+    <string name="textview">TextView</string>
+
+    <string name="select_fert">Select Available Fertilizer</string>
+    <string name="done">Done</string>
+    <string name="select_all">Select All</string>
+    <string name="recommended_fertilizer">Recommended Fertilizer</string>
+    <string name="field_name">Field Name:</string>
+    
+    <string name="err_msg_name">Please Enter Field Name!</string>
+    <string name="err_msg_size">Please Enter Field Size!</string>
+    <string name="err_msg_req">Please Enter Valid Input!</string>
+    <string name="enter_field_name">Enter Field Name</string>
+    <string name="enter_field_size">Enter Field Size</string>
+    <string name="fertilizer_name">Fertilizer Name:</string>
+    <string name="fertilizer_price">Fertilizer Price:</string>
+    <string name="nutrient_content">Fill Nutrient Content:</string>
+    <string name="content">Content:</string>
+    <string name="yld_desc">Adoption of Bhoochetana Principles and Approaches for Natural Resources Management Towards Sustainable Agriculture. </string>
+
+    <string-array name="nutrients">
+        <item>N</item>
+        <item>P</item>
+        <item>K</item>
+        <item>S</item>
+        <item>Zn</item>
+        <item>B</item>
+        <item>Ca</item>
+        <item>Mg</item>
+        <item>Cu</item>
+        <item>Fe</item>
+        <item>Mn</item>
+        <item>Mo</item>
+    </string-array>
+</resources>

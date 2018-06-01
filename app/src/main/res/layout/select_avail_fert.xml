@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context="com.example.charliepc.newproj.SelectAvailableFertActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_fert"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <CheckedTextView
+        android:id="@+id/selectall_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center_vertical"
+        android:text="@string/select_all"
+        android:textAlignment="textEnd" />
+
+    <ListView
+        android:id="@+id/fertchecklist_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

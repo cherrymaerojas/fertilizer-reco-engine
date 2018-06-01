@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.charliepc.newproj.SoilHealthInfoInputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/soil_health_information"
+            android:textAlignment="center"
+            android:textSize="@dimen/shi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/major_nutrients"
+            android:textColor="@color/green"
+            android:textSize="@dimen/primelabel" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nitrogen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/nitrogen"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/nitrogen_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/nitrogen"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/nitrogen_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/nitrogen"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/nitrogen"
+                android:layout_toRightOf="@+id/nitrogen"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phosphorous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/phosphorous"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/phosphorous_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/phosphorous"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/phosphorous_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/phosphorous"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/phosphorous"
+                android:layout_toRightOf="@+id/phosphorous"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/potassium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/potassium"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/potassium_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/potassium"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/potassium_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/potassium"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/potassium"
+                android:layout_toRightOf="@+id/potassium"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/secondary_nutrients"
+            android:textColor="@color/green"
+            android:textSize="@dimen/primelabel" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sulfur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/sulfur"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/sulfur_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/sulfur"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/sulfur_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/sulfur"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/sulfur"
+                android:layout_toRightOf="@+id/sulfur"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/micro_nutrients"
+            android:textColor="@color/green"
+            android:textSize="@dimen/primelabel" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/zinc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/zinc"
+                android:textSize="@dimen/primelabel">
+
+                <EditText
+                    android:id="@+id/zinc_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/zinc"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/zinc_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/zinc"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/zinc"
+                android:layout_toRightOf="@+id/zinc"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/boron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/boron"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/boron_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/boron"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/boron_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/boron"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/boron"
+                android:layout_toRightOf="@+id/boron"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/iron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/iron"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/iron_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/iron"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/iron_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iron"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/iron"
+                android:layout_toRightOf="@+id/iron"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/copper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/copper"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/copper_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/copper"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/copper_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/copper"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/copper"
+                android:layout_toRightOf="@+id/copper"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/manganese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="@string/manganese"
+                android:textSize="@dimen/secondlabel">
+
+                <EditText
+                    android:id="@+id/manganese_id"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/manganese"
+                    android:inputType="numberDecimal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/manganese_re"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/manganese"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/manganese"
+                android:layout_toRightOf="@+id/manganese"
+                android:textColor="@color/red"
+                android:textSize="@dimen/secondlabel" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@android:drawable/ic_menu_send"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</ScrollView>

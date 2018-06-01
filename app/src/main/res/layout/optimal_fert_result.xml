@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.charliepc.newproj.OptimalFertilizerResultActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recommended_fertilizer"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/field_name" />
+
+        <TextView
+            android:id="@+id/fieldname_res"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fsize"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/field_size" />
+        <TextView
+            android:id="@+id/fieldsize_res"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/crop"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Crop: " />
+        <TextView
+            android:id="@+id/crop_res"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soil Health Analysis"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textSize="@dimen/primelabel"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/nutrient_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Nutrient "/>
+            <TextView
+                android:id="@+id/remark_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="Remarks "/>
+            <TextView
+                android:id="@+id/recommend_label"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="Recommended Rate "/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/n_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Nitrogen "/>
+            <TextView
+                android:id="@+id/n_remark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+               />
+            <TextView
+                android:id="@+id/n_rec"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/p_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Phosphorous"/>
+            <TextView
+                android:id="@+id/p_remark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+               />
+            <TextView
+                android:id="@+id/p_rec"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+               />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/k_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Potassium"/>
+            <TextView
+                android:id="@+id/k_remark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                />
+            <TextView
+                android:id="@+id/k_rec"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/s_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Sulfur"/>
+            <TextView
+                android:id="@+id/s_remark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                />
+            <TextView
+                android:id="@+id/s_rec"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/z_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Zinc"/>
+            <TextView
+                android:id="@+id/z_remark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                />
+            <TextView
+                android:id="@+id/z_rec"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/b_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Boron"/>
+            <TextView
+                android:id="@+id/b_remark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+               />
+            <TextView
+                android:id="@+id/b_rec"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimized Result"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textSize="@dimen/primelabel"/>
+
+    <TextView
+        android:id="@+id/texttest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>

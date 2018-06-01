@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Done_id"
+        android:icon="@drawable/ic_check_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Done" />
+
+    <item android:id="@+id/addfert_id"
+        android:title="Add Fertilizer"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/checkfert_id"
+        android:title="Check Fertilizer"
+        app:showAsAction="never"/>
+</menu>
